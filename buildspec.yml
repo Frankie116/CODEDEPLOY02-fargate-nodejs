@@ -6,8 +6,8 @@ phases:
       - $(aws ecr get-login --no-include-email --region eu-west-2)
   build:
     commands:
-      - docker build -t CP07-youtube-image:latest .
-      - docker tag CP07-youtube-image:latest 396057208705.dkr.ecr.eu-west-2.amazonaws.com/youtube:latest
+      - docker build -t cp07-youtube-image:latest .
+      - docker tag cp07-youtube-image:latest 396057208705.dkr.ecr.eu-west-2.amazonaws.com/youtube:latest
   post_build:
     commands:
       - docker push 396057208705.dkr.ecr.eu-west-2.amazonaws.com/youtube:latest
