@@ -16,4 +16,4 @@ The following is performed when changes are detected in the repo.
   
   [3] Codepipeline directs ECS to retrieve the image from ECR and starts to create the aws cloud infrastructure.
   
-  [4] ECS then runs the app inside docker containers hosted on load balanced infrastucture publicly accessible in the aws cloud.
+  [4] ECS then runs the app inside docker containers hosted on load balanced infrastucture publicly accessible in the aws cloud..
