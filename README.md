@@ -10,10 +10,10 @@ This project is part of an AWS CodePipeline which monitors changes in this git r
 
 The following is performed when changes are detected in the repo.
 
-  [1] CodePipeline connects this github repo and uses the Dockerfile to build a new docker image.
+  [1] CodePipeline connects to this github repo and uses the buildspec.yml & Dockerfile to build a new docker image using CodeBuild.
   
   [2] CodePipeline pushes the new image to AWS ECR Repository.
   
-  [3] Codepipeline directs ECS to retrieve the image from ECR and starts to build the aws cloud infrastructure.
+  [3] Codepipeline directs ECS to retrieve the image from ECR and starts to create the aws cloud infrastructure.
   
   [4] ECS then runs the app inside docker containers hosted on load balanced infrastucture publicly accessible in the aws cloud.
