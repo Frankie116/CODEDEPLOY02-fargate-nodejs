@@ -8,6 +8,7 @@ The infrastructure is used to host a simple node.js app that is hosted in duplic
 The Docker images are built locally and pushed to AWS ECR.  These are then used by AWS ECS to host the apps.
 
 Author:  Frank Effrim-Botchey
+
 Library: https://github.com/Frankie116/my-library.git
 
 ----------------------------------------------------------------------------
