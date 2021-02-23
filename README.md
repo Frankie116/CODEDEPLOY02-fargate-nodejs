@@ -1,5 +1,6 @@
 ----------------------------------------------------------------------------
-# Project: CP07-fargate-nodejs
+
+# Project: CODEDEPLOY-fargate-nodejs
 Purpose: This project creates a loadbalanced fargate infrastructure using AWS CodePipeline.  
 
 The infrastructure is used to host a simple node.js app that is hosted in duplicate containers in redundant availablity zones. 
@@ -8,6 +9,7 @@ The Docker images are built locally and pushed to AWS ECR.  These are then used 
 
 Author:  Frank Effrim-Botchey
 Library: https://github.com/Frankie116/my-library.git
+
 ----------------------------------------------------------------------------
 
 This project is part of an AWS CodePipeline which monitors changes in this git repo.
